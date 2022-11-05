@@ -33,7 +33,8 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false --strict",
     "typegen": "tsc --outFile dist/cannon-es.d.ts",
     "generate-docs": "typedoc",
-    "test": "jest"
+    "test": "jest",
+    "min": "terser -c -m --module dist/cannon-es.js -o dist/cannon-es.min.js"
   },
   "repository": {
     "type": "git",
